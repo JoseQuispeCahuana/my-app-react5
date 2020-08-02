@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { Co} from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+import Saludo from './components/saludo';
+
+import MiComponente from './components/MiComponente'
+import Contador from './components/2Contador';
+import Operador from './components/3OperadorTernario';
+import Matriz from './4Matriz';
+import MatrizOperaciones from './5Matrizoperaciones';
 
 function App() {
   return (
@@ -19,6 +27,15 @@ function App() {
           Learn React
         </a>
       </header>
+      <section className="componentes">
+      <MiComponente/>  <hr />
+      <Saludo/>   <hr/>
+      <Contador/> <hr/>
+      <Operador/> <hr/>
+      <Matriz />   <hr/>
+      <MatrizOperaciones /> <hr/>
+      
+      </section>
     </div>
   );
 }
